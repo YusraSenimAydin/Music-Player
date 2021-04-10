@@ -12,13 +12,13 @@ const cover = document.getElementById('cover');
 // Song titles
 const songs = ['hey', 'summer', 'ukulele'];
 
-// Keep track of song
+// Şarkıyı takip edin
 let songIndex = 2;
 
-// Initially load song details into DOM
+// Başlangıçta şarkı ayrıntılarını DOM'a yükleyin
 loadSong(songs[songIndex]);
 
-// Update song details
+//Şarkı ayrıntılarını güncelleyin
 function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
